@@ -20,15 +20,71 @@
 <!-- Link to bootstrap -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  
-<!-- Script from javascript game.js file -->
-<script src="assets/javascript/game.js"></script>
 <!-- Script from jQuery -->
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<!-- Script from javascript game.js file -->
+<script src="assets/javascript/game.js"></script>
 
 </head>
 
 <body>
 
+<!-- Hangman header image -->
+<div class="container backblack"> 
+	<img src="assets/images/htitle.jpg" alt="Headerimg" class="img-responsive center-block">
+</div>
+
+<!-- body: two columns -->
+<br> <br> <br>
+
+
+<!-- column 1 with image & potential other effects/sounds -->
+<div class="container">
+	
+	<div class="col-md-2">	</div>
+
+	<div class="col-md-4 backblack"> 
+
+		<br> 
+
+			<img src="assets/images/hungimg.jpg" alt="hungimg" class="img-responsive center-block">
+
+		<br> <br>
+		
+		<p class="pagefont"> Losses: <span id="lossCounter" class="pagefont"> </span></p>
+
+		<p class="pagefont"> Wins: <span id="winCounter" class="pagefont"> </span></p>
+
+	</div>
+
+<!-- column 2 visual interface: win counter, blank word/letter lines, guess counter, guessed letters -->
+	<div class="col-md-4 backblack"> 
+		
+		<!-- <button class="btn-center center-block" onclick=""> Generate Word </button> -->
+
+		<!-- Current word text and style -->
+		<p class="pagefont" style="text-align: center;"> Current Word </p>
+
+		<!-- Blank word / letter lines -->
+		<p id="curWord" class="pagefont"> </p>
+
+		<!-- Number of guesses text and style -->
+		<p class="pagefont" style="text-align: center";> Number of guesses remaining: </p>
+
+		<!-- counter lives remianing -->
+		<p id="guessesLeft" class="pagefont"> </p>
+		
+
+		<!-- Letters already guessed <p> and style -->
+		<p class="pagefont" style="text-align: center";> Letters already guessed: </p>
+		
+		<!-- Will display letters that were wrongGuesses -->
+		<p id="wrongGuesses" class="pagefont"> </p>
+
+
+	</div>
+		
+</div>
 
 </body>
 

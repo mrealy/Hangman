@@ -1,0 +1,13 @@
+.backblack {
+	background-color: black;
+	border-style: dashed;
+	border-color: pink;
+	border-width: 5px;
+}
+
+.pagefont {
+	font-style: "Comic Sans MS", cursive, sans-serif;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
