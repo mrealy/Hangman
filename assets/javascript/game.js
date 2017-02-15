@@ -1,7 +1,7 @@
 $(document).ready(function() {	
-	var wordBank = ['bird', 'lizard', 'gorilla'];
+	var wordBank = ['lizard', 'gorilla', 'leopard', 'penguin', 'parrot', 'koala', 'hippopotamus', 'coyote', 'tiger', 'mongoose'];
 	var winCounter = 0;
-	var lossCounter = 0;
+	var lossCounter = 0;''
 	var wrongGuesses = [];
 	var numGuesses = 9;
 	var cWord = '';
@@ -9,6 +9,8 @@ $(document).ready(function() {
 	var blankArray = [];
 
 	console.log('original array: ' + wordBank);
+
+	document.getElementById("lossCounter").innerHTML = lossCounter;
 
 	function startGame() {
 
@@ -21,6 +23,7 @@ $(document).ready(function() {
 
 		numGuesses = 9;
 		blankArray = [];
+		wrongGuesses = [];
 		cWord = '';
 		wordBank = wordBank;
 
@@ -90,12 +93,12 @@ $(document).ready(function() {
 			winCounter ++;
 			alert("You Win!");
 			console.log(winCounter);
-			document.getElementById("winCounter").innerHTML = winCounter;
+			document.getElementById("winCounter").innerHTML = winCounter;			
 			startGame();
 		} else if(numGuesses === 0) {
 			document.getElementById("lossCounter").innerHTML = lossCounter ++;
 			document.getElementById("wrongGuesses").innerHTML = '';
-			alert("You Lose!");
+			alert("You Lose!");		
 			startGame();
 		}
 	}
